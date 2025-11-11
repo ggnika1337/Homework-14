@@ -16,12 +16,12 @@ body {
 }
 
 .main-container {
-  max-width: 928px;
+  width: 928px;
   height: 641px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 36px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-left: 64px;
   padding-right: 24px;
@@ -84,6 +84,15 @@ button {
   font-weight: 700;
   font-size: 16px;
   border: 0px;
+}
+
+button:hover {
+  transition: 1s;
+  background-image: linear-gradient(
+    rgba(255, 106, 58, 1),
+    rgba(255, 82, 123, 1)
+  );
+  filter: drop-shadow(5px 20px 10px rgba(255, 97, 85, 0.5));
 }
 
 .checkmark-oval {
