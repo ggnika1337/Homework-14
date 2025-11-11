@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgba(54, 56, 77, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  max-width: 928px;
+  height: 641px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 64px;
+  padding-right: 24px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 446px;
+  max-width: 376px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 376px;
+  height: 244px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.label-input {
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  border-radius: 8px;
+  max-width: 350px;
+  height: 56px;
+  padding-left: 24px;
+}
+
+button {
+  color: white;
+  background-color: rgba(36, 39, 66, 1);
+  border-radius: 8px;
+  width: 350px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  border: 0px;
+}
+
+.checkmark-oval {
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  background-color: rgba(255, 97, 85, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 30 0px;
+  height: 593px;
+}
+
+.checkmark-image {
+  max-width: 9px;
+  height: 6px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
