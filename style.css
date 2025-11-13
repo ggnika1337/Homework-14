@@ -13,6 +13,17 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+span {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .main-container {
@@ -67,15 +78,23 @@ body {
   gap: 8px;
 }
 
-input {
+.emailinput {
+  background-color: white;
   border: 1px solid rgba(25, 24, 43, 0.25);
   border-radius: 8px;
   max-width: 350px;
   height: 56px;
   padding-left: 24px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-button {
+.emailinput:hover {
+  border: 1px solid rgba(36, 39, 66, 1);
+  cursor: pointer;
+}
+
+.button {
   color: white;
   background-color: rgba(36, 39, 66, 1);
   border-radius: 8px;
@@ -83,16 +102,20 @@ button {
   height: 56px;
   font-weight: 700;
   font-size: 16px;
-  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-button:hover {
+.button:hover {
   transition: 1s;
   background-image: linear-gradient(
     rgba(255, 106, 58, 1),
     rgba(255, 82, 123, 1)
   );
   filter: drop-shadow(5px 20px 10px rgba(255, 97, 85, 0.5));
+  cursor: pointer;
 }
 
 .checkmark-oval {
@@ -106,7 +129,7 @@ button:hover {
 }
 
 img {
-  max-width: 30 0px;
+  max-width: 400px;
   height: 593px;
 }
 
@@ -115,7 +138,38 @@ img {
   height: 6px;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 56px;
+.img-phone {
+  display: none;
+}
+
+@media only screen and (max-width: 710px) {
+  .img-desktop {
+    display: none;
+  }
+  .img-phone {
+    display: block;
+    width: 375px;
+    height: 284px;
+  }
+  .main-container {
+    flex-direction: column-reverse;
+    padding-bottom: 200px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    padding-left: 24px;
+    gap: 40px;
+  }
+  .texts {
+    max-width: 327px;
+  }
+  .left-side {
+    gap: 50px;
+  }
+  .button {
+    max-width: 327px;
+  }
+  h1 {
+    font-size: 40px;
+  }
 }
